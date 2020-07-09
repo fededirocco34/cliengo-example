@@ -1,0 +1,58 @@
+.container {
+  width: 286px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000001F;
+  border-radius: 4px;
+  opacity: 1;
+  padding: 13px;
+  margin: 10px 14px 10px 0;
+  height: 118px;
+}
+
+.title {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #515151;
+  opacity: 1;
+  margin: 0 0 0 7px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.titleContainer {
+  margin-bottom: 5px;
+}
+
+.content {
+  max-width: 265px;
+  min-height: 60px;
+}
+
+.description {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #515151;
+  opacity: 1;
+  margin: 2px;
+  padding-left: 23px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.line {
+  border: 1px solid #515151;
+  width: 100%;
+  opacity: 0.1;
+}
+
+.link {
+  color: #515151;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.switch {
+  margin-left: 13px;
+}

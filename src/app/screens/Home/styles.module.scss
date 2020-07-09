@@ -1,0 +1,57 @@
+$grey-color: #515151;
+
+.appLogo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.title {
+  text-align: center;
+  font: SemiBold 29px/39px Nunito;
+  letter-spacing: 0px;
+  color: $grey-color;
+  opacity: 1;
+}
+
+.titleDescription {
+  font-weight: bold;
+  font-size: 14px;
+  color: $grey-color;
+}
+
+.description {
+  color: $grey-color;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .appLogo {
+    animation: appLogoSpin infinite 20s linear;
+  }
+}
+
+.appHeader {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.appLink {
+  color: #61dafb;
+}
+
+@keyframes appLogoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

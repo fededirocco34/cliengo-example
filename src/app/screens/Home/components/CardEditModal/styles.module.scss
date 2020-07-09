@@ -1,0 +1,111 @@
+.button {
+  background: #1ABC9C 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 16px;
+  width: 86px;
+  color: white;
+  border-style: hidden;
+  padding: 7px 18px;
+  height: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  align-self: center;
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &:hover {
+    background-color: #7D60F5;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#0000004D;
+}
+
+.modalContent {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 10px #00000026;
+  border-radius: 4px;
+  width: 449px;
+  height: 215px;
+  z-index: 1000;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  padding: 15px 15px 15px 22px;
+
+  &:focus {
+    outline: none !important;
+    border: none;
+  }
+}
+
+.modalBlur {
+  filter: blur(100px);
+}
+
+.subtitle {
+  text-align: left;
+  color: #7D60F5;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.title {
+  text-align: left;
+  color: #515151;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.iconBolt {
+  color: #7D60F5;
+  padding-top: 3px
+}
+
+.iconClose {
+  color: #9A9A9A;
+  width: 15px;
+}
+
+.titleContainer {
+  margin-bottom: 5px;
+}
+
+.description {
+  color: #515151;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.textArea {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  resize: none;
+  margin-bottom: 20px;
+  padding: 8px 8px 8px 12px;
+  color: #515151;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Nunito;
+  height: 40px;
+
+  &:focus {
+    outline: none !important;
+    border: 1px solid #1ABC9C;
+  }
+}
+
+.content {
+  padding-right: 30px;
+}
