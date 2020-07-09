@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.4.1",
     "apisauce": "^1.1.1",
     "connected-react-router": "^6.8.0",
     "i18next": "^13.1.5",
@@ -13,16 +14,19 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
+    "react-modal": "^3.11.2",
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-spinkit": "^3.0.0",
+    "react-switch": "^5.0.1",
     "redux": "^4.0.5",
     "redux-form": "^8.3.6",
     "redux-recompose": "^2.2.0",
     "redux-thunk": "^2.3.0",
-    "seamless-immutable": "^7.1.4"
+    "seamless-immutable": "^7.1.4",
+    "wolox-equalizer": "0.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

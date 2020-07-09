@@ -19,13 +19,14 @@ function FormInput({
   placeholder = '',
   readOnly = false,
   touched,
-  submitCount
+  submitCount,
+  value
 }) {
   const InputComponent = isTextarea ? 'textarea' : 'input';
   const showError =
     (touched === undefined || touched) && error && (submitCount === undefined || submitCount > 0);
   return (
-    <div className={`column start ${className}`}>
+    <div className={`column ${className}`}>
       {label && (
         <label htmlFor={name} className={`${labelClassName} m-bottom-1`}>
           {label}
@@ -42,7 +43,9 @@ function FormInput({
         onBlur={onBlur}
         disabled={disabled}
         readOnly={readOnly}
-      />
+      >
+        {isTextarea && value}
+      </InputComponent>
       <span className={`${errorClassName} ${styles.errorText} ${showError ? styles.visible : ''}`}>
         {error}
       </span>
