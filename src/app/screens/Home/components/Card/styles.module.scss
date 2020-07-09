@@ -10,14 +10,6 @@
   width: 286px;
 }
 
-.title {
-  color: $emperor;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0 0 0 7px;
-  text-align: left;
-}
-
 .titleContainer {
   margin-bottom: 5px;
 }
@@ -28,26 +20,14 @@
 }
 
 .description {
-  color: $emperor;
-  font-size: 14px;
-  font-weight: 400;
   margin: 2px;
   padding-left: 23px;
-  text-align: left;
 }
 
 .line {
   border: 1px solid $emperor;
   opacity: 0.1;
   width: 100%;
-}
-
-.link {
-  color: $emperor;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .switch {

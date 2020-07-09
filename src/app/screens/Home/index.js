@@ -9,14 +9,20 @@ import '../../../scss/application.scss';
 function Home({ currentUser }) {
   return (
     <div className={styles.app}>
-      <h1 className={styles.title}>Respuestas frecuentes</h1>
-      <span className={styles.titleDescription}>Cliengo detecta las preguntas más frecuentes que hacen los clientes.</span>
-      <p className={styles.description}>Optimiza el diálogo con ellos, configurando respuestas a estas preguntas desde aquí.</p> 
-      <p className={styles.description}>
-        <a href="/">
-          Cómo configurar respuestas automáticas
-        </a>
-      </p>
+      <h1 className="title-primary">
+        Respuestas frecuentes
+      </h1>
+      <span className="title-description-bold">
+        Cliengo detecta las preguntas más frecuentes que hacen los clientes.
+      </span>
+      <p className={`title-description ${styles.description}`}>
+        Optimiza el diálogo con ellos, configurando respuestas a estas preguntas desde aquí.
+      </p> 
+      <a href="/">
+        <p className="title-description">
+            Cómo configurar respuestas automáticas
+        </p>
+      </a>
       <CardList cards={CARDS} />
     </div>
   );

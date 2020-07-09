@@ -6,9 +6,6 @@
   border-radius: 16px;
   border-style: hidden;
   box-shadow: 0px 3px 6px $black-russian-shadow;
-  color: $white;
-  font-size: 14px;
-  font-weight: 400;
   height: 32px;
   padding: 7px 18px;
   width: 86px;
@@ -19,6 +16,7 @@
 
   &:hover {
     background-color: $cornflower-blue;
+    cursor: pointer;
   }
 }
 
@@ -55,17 +53,6 @@
 
 .subtitle {
   color: $cornflower-blue;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: left;
-}
-
-.title {
-  text-align: left;
-  color: $emperor;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0 5px;
 }
 
 .iconBolt {
@@ -83,9 +70,6 @@
 }
 
 .description {
-  color: $emperor;
-  font-weight: bold;
-  font-size: 14px;
   margin-bottom: 20px;
 }
 
@@ -96,10 +80,6 @@
   resize: none;
   margin-bottom: 20px;
   padding: 8px 8px 8px 12px;
-  color: $emperor;
-  font-weight: 400;
-  font-size: 14px;
-  font-family: Nunito;
   height: 40px;
 
   &:focus {
