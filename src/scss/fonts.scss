@@ -1,0 +1,55 @@
+@import 'colors';
+
+.title-primary {
+  color: $emperor;
+  font-size: 29px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.title-description-bold {
+  color: $emperor;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.title-description {
+  color: $emperor;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.title-card {
+  color: $emperor;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 0 7px;
+}
+
+.description-card {
+  color: $emperor;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.link {
+  color: $emperor;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.title-modal {
+  color: $emperor;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.text-button {
+  color: $white;
+  font-size: 14px;
+  font-weight: 400;
+}

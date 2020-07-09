@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactModal from 'react-modal';
+import { t } from 'i18next';
 
 import FormInput from '../../../../components/FormInput';
 
@@ -44,16 +45,16 @@ function CardEditModal({ title, description, isOpen, handleClose }) {
         <div className={`row space-between ${styles.titleContainer}`}>
           <div className="row">
             <i className={`fa fa-bolt ${styles.iconBolt}`} aria-hidden="true" />
-            <p className={styles.title}>
-              <span className={styles.subtitle}>Respuesta a: </span>
+            <p className="title-modal">
+              <span className={styles.subtitle}>{t('EditModal:answerTo')}</span>
               {title}
             </p>
           </div>
           <i className={`fa fa-times ${styles.iconClose}`} aria-hidden="true" onClick={onHandleClose} />
         </div>
         <div className={`column middle ${styles.content}`}>
-          <p className={styles.description}>
-            Si el cliente consulta por horarios de atención, el chatbot responderá
+          <p className={`description-card ${styles.description}`}>
+            {t('EditModal:attentionHours')}
           </p>
           <form className={`column ${styles.formContainer}`} onSubmit={handleSubmit}>
             <FormInput
@@ -61,11 +62,11 @@ function CardEditModal({ title, description, isOpen, handleClose }) {
               name="Text"
               value={textArea}
               inputType="text"
-              inputClassName={`full-width ${styles.textArea}`}
+              inputClassName={`full-width description-card ${styles.textArea}`}
               onChange={onTextAreaChange}
             />
-            <button type="submit" className={`row center ${styles.button}`}>
-              Guardar
+            <button type="submit" className={`row center text-button ${styles.button}`}>
+            {t('EditModal:save')}
             </button>
           </form>
         </div>

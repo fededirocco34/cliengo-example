@@ -25,14 +25,14 @@ function Card({ title, description, enabled }) {
       <div className={`column ${styles.container}`}>
         <div className={`row ${styles.titleContainer}`}>
           <img src={Logo} alt="Logo pregunta" />
-          <h3 className={styles.title}>{title}</h3>
+          <h3 className="title-card">{title}</h3>
         </div>
         <div className={styles.content}>
-          <p className={styles.description}>{description}</p>
+          <p className={`description-card ${styles.description}`}>{description}</p>
         </div>
         <hr className={styles.line} />
         <div className={`row end ${styles.footer}`}>
-          <i className={`fa fa-pencil ${styles.link}`} aria-hidden="true" onClick={handleModal} />
+          <i className="fa fa-pencil link" aria-hidden="true" onClick={handleModal} />
           <Switch 
             onChange={handleEditOption} 
             checked={isEnabledOption} 
