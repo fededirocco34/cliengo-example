@@ -1,49 +1,51 @@
+@import '../../../../../scss/colors.scss';
+
 .button {
-  background: #1ABC9C 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 16px;
-  width: 86px;
-  color: white;
-  border-style: hidden;
-  padding: 7px 18px;
-  height: 32px;
-  font-weight: 400;
-  font-size: 14px;
   align-self: center;
+  background: $mountain-meadow 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  border-style: hidden;
+  box-shadow: 0px 3px 6px $black-russian-shadow;
+  color: $white;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  padding: 7px 18px;
+  width: 86px;
 
   &:focus {
     outline: none !important;
   }
 
   &:hover {
-    background-color: #7D60F5;
+    background-color: $cornflower-blue;
   }
 }
 
 .modalOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color:$modal-background;
   bottom: 0;
-  background-color:#0000004D;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 .modalContent {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 2px 10px #00000026;
+  background: $white 0% 0% no-repeat padding-box;
   border-radius: 4px;
-  width: 449px;
+  box-shadow: 0px 2px 10px $modal-shadow;
   height: 215px;
-  z-index: 1000;
-  position: absolute;
-  top: 30%;
   left: 30%;
   padding: 15px 15px 15px 22px;
+  position: absolute;
+  top: 30%;
+  width: 449px;
+  z-index: 1000;
 
   &:focus {
-    outline: none !important;
     border: none;
+    outline: none !important;
   }
 }
 
@@ -52,22 +54,22 @@
 }
 
 .subtitle {
-  text-align: left;
-  color: #7D60F5;
-  font-weight: bold;
+  color: $cornflower-blue;
   font-size: 18px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .title {
   text-align: left;
-  color: #515151;
+  color: $emperor;
   font-weight: bold;
   font-size: 18px;
   margin: 0 5px;
 }
 
 .iconBolt {
-  color: #7D60F5;
+  color: $cornflower-blue;
   padding-top: 3px
 }
 
@@ -81,20 +83,20 @@
 }
 
 .description {
-  color: #515151;
+  color: $emperor;
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 20px;
 }
 
 .textArea {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #E6E6E6;
+  background: $white 0% 0% no-repeat padding-box;
+  border: 1px solid $mercury;
   border-radius: 4px;
   resize: none;
   margin-bottom: 20px;
   padding: 8px 8px 8px 12px;
-  color: #515151;
+  color: $emperor;
   font-weight: 400;
   font-size: 14px;
   font-family: Nunito;
@@ -102,7 +104,7 @@
 
   &:focus {
     outline: none !important;
-    border: 1px solid #1ABC9C;
+    border: 1px solid $mountain-meadow;
   }
 }
 

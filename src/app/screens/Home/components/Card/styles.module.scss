@@ -1,22 +1,21 @@
+@import '../../../../../scss/colors.scss';
+
 .container {
-  width: 286px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #0000001F;
+  background: $white 0% 0% no-repeat padding-box;
   border-radius: 4px;
-  opacity: 1;
-  padding: 13px;
-  margin: 10px 14px 10px 0;
+  box-shadow: 0px 3px 6px $black-russian-shadow;
   height: 118px;
+  margin: 10px 14px 10px 0;
+  padding: 13px;
+  width: 286px;
 }
 
 .title {
-  text-align: left;
-  letter-spacing: 0px;
-  color: #515151;
-  opacity: 1;
-  margin: 0 0 0 7px;
-  font-weight: bold;
+  color: $emperor;
   font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 0 7px;
+  text-align: left;
 }
 
 .titleContainer {
@@ -29,24 +28,22 @@
 }
 
 .description {
-  text-align: left;
-  letter-spacing: 0px;
-  color: #515151;
-  opacity: 1;
+  color: $emperor;
+  font-size: 14px;
+  font-weight: 400;
   margin: 2px;
   padding-left: 23px;
-  font-weight: 400;
-  font-size: 14px;
+  text-align: left;
 }
 
 .line {
-  border: 1px solid #515151;
-  width: 100%;
+  border: 1px solid $emperor;
   opacity: 0.1;
+  width: 100%;
 }
 
 .link {
-  color: #515151;
+  color: $emperor;
 
   &:hover {
     cursor: pointer;
