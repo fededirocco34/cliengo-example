@@ -1,4 +1,5 @@
 import React from 'react';
+import { t } from 'i18next';
 
 import { CARDS } from './constants';
 import CardList from './components/CardList';
@@ -10,17 +11,17 @@ function Home({ currentUser }) {
   return (
     <div className={styles.app}>
       <h1 className="title-primary">
-        Respuestas frecuentes
+        {t('Home:frequentAnswers')}
       </h1>
       <span className="title-description-bold">
-        Cliengo detecta las preguntas más frecuentes que hacen los clientes.
+        {t('Home:cliengoQuestions')}
       </span>
       <p className={`title-description ${styles.description}`}>
-        Optimiza el diálogo con ellos, configurando respuestas a estas preguntas desde aquí.
+      {t('Home:optimizeDialog')}
       </p> 
       <a href="/">
         <p className="title-description">
-            Cómo configurar respuestas automáticas
+        {t('Home:automaticAnswers')}
         </p>
       </a>
       <CardList cards={CARDS} />

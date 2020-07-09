@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactModal from 'react-modal';
+import { t } from 'i18next';
 
 import FormInput from '../../../../components/FormInput';
 
@@ -45,7 +46,7 @@ function CardEditModal({ title, description, isOpen, handleClose }) {
           <div className="row">
             <i className={`fa fa-bolt ${styles.iconBolt}`} aria-hidden="true" />
             <p className="title-modal">
-              <span className={styles.subtitle}>Respuesta a: </span>
+              <span className={styles.subtitle}>{t('EditModal:answerTo')}</span>
               {title}
             </p>
           </div>
@@ -53,7 +54,7 @@ function CardEditModal({ title, description, isOpen, handleClose }) {
         </div>
         <div className={`column middle ${styles.content}`}>
           <p className={`description-card ${styles.description}`}>
-            Si el cliente consulta por horarios de atención, el chatbot responderá
+            {t('EditModal:attentionHours')}
           </p>
           <form className={`column ${styles.formContainer}`} onSubmit={handleSubmit}>
             <FormInput
@@ -65,7 +66,7 @@ function CardEditModal({ title, description, isOpen, handleClose }) {
               onChange={onTextAreaChange}
             />
             <button type="submit" className={`row center text-button ${styles.button}`}>
-              Guardar
+            {t('EditModal:save')}
             </button>
           </form>
         </div>
